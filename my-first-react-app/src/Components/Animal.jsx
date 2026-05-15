@@ -1,14 +1,25 @@
+function ListItem({ item }) {
+    return <li>{item}</li>;
+}
+
+function List({ items }) {
+    return (
+        <ul>
+            {items.map((animal) => {
+                return animal.startsWith("L") ? <ListItem key={animal} item={animal} /> : null;
+            })}
+        </ul>
+    );
+}
+
 function AnimalComponent() {
     const animals = ["Lion", "Cow", "Snake", "Lizard"];
-    const animalsList = animals.map((animal) => <li key={animal}>{animal}</li>)
-    console.log(animalsList);
+    console.log(animals);
 
     return (
         <div>
-            <h1>Animal Component</h1>
-            <ul>
-                {animalsList}
-            </ul>
+            <h1>Animals:</h1>
+            <List items={animals} />
         </div>
     );
 }
