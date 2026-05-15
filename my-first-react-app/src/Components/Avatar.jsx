@@ -8,7 +8,7 @@ function AvatarComponent({ person, size = 100 }) {
     )
 }
 
-export default function AvatarApp() {
+export default function Avatar() {
     return (
         <>
             <AvatarComponent person={{ name: 'Lin Lanying', imageId: '1bX5QH6' }} />

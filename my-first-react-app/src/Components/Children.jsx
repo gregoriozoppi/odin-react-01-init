@@ -1,4 +1,4 @@
-import AvatarApp from './AvatarComponent.jsx'
+import Avatar from './Avatar.jsx'
 
 function ChildrenComponent({ children }) {
     return (
@@ -8,10 +8,10 @@ function ChildrenComponent({ children }) {
     );
 }
 
-export default function ChildrenApp() {
+export default function Children() {
     return (
         <ChildrenComponent>
-            <AvatarApp />
+            <Avatar />
         </ChildrenComponent>
     );
 }
