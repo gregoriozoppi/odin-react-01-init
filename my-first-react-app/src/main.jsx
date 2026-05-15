@@ -2,10 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 // import App from './App.jsx'
-import ButtonApp from './ButtonComponent.jsx'
+import ChildrenApp from './ChildrenComponent.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ButtonApp />
+    <ChildrenApp />
   </StrictMode>,
 )
